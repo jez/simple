@@ -2,7 +2,6 @@ blog-me/
 *.pyc
 *.db
 *.*~
-/settings.py
 cache/
 .idea/
 envsimple/
