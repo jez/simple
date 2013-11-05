@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if config.USE_FAVICON %}
-        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
         {% endif %}
         <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ url_for('feed') }}">
         <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
@@ -23,16 +23,16 @@
             
             .post_container > p {
                 left: 15%;
-                font-family: "{{ config.FONT_NAME }}", sans-serif;
-                line-height: 1.8em;
-                font-size: 15px;
+                font-family: "{{ config.FONT_NAME|replace('+',' ') }}", sans-serif;
+                line-height: 1.4em;
+                font-size: 16px;
                 font-weight: 400;
             }
             
             body, pre, input {
-                font-family: "{{ config.FONT_NAME }}", sans-serif;
-                line-height: 1.8em;
-                font-size: 15px;
+                font-family: "{{ config.FONT_NAME|replace('+',' ') }}", sans-serif;
+                line-height: 1.4em;
+                font-size: 16px;
                 font-weight: 400; }
         </style>
         
