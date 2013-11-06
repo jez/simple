@@ -82,9 +82,9 @@ code.prettyprint {
 code {
     font-size: 13px;
     background: #F2F2F2;
-    padding: 20px;
+    /*padding: 20px;
     margin: 20px;
-    display: block; }
+    display: block; */}
 
 
 header span {
