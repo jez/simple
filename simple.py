@@ -30,6 +30,7 @@ except ImportError:
 
 app = Flask(__name__)
 app.config.from_object('settings')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 app.secret_key = app.config["SECRET_KEY"]
 
 UPLOAD_FOLDER = 'uploads/'
