@@ -1,6 +1,5 @@
 blog-me/
 *.pyc
-*.db
 *.*~
 cache/
 .idea/
