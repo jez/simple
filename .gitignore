@@ -1,6 +1,7 @@
 blog-me/
 *.pyc
 *.*~
+.*.sw*
 cache/
 .idea/
 envsimple/
