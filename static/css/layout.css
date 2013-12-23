@@ -70,16 +70,12 @@ h6 { /* used for subtitles */
   font-weight: normal;
   color: #777;
   font-family: "Droid Sans", Helvetica, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 1.7em;
 }
-
-pre {
-  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
-  font-size: 14px;
-}
-
 
 .post_container > h1,h2,h3,h4,h5{
-  margin-top: 0.5em;
+  margin-top: 0.9em;
   margin-bottom: 0px;
 }
 .post_container > p {
@@ -91,7 +87,7 @@ p {
 
 a,
 a:visited
-a:active{
+a:active {
   color: #000;
   text-decoration: none;
   border-bottom: 1px solid #ddd;
@@ -117,6 +113,14 @@ textarea {
 
 .post_title {
   line-height: 1.2em;
+}
+
+pre, .post_content textarea {
+  font-size: 14px;
+}
+
+pre, .post_title textarea, .post_content textarea {
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
 }
 
 img {
