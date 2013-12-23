@@ -1,5 +1,7 @@
 /* shamelessly stolen from https://github.com/NateW/obtvse/blob/master/app/assets/stylesheets/posts.css.scss */
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
 aside {
   position: relative;
   display: block; 
@@ -31,11 +33,6 @@ body, textarea, input {
   line-height: 1.8em;
   font-size: 15px;
   font-weight: 400; 
-}
-
-pre {
-  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
-  font-size: 14px;
 }
 
 h1, h2, h3, h4, h5 {
