@@ -7,7 +7,7 @@ body {
 }
 
 body, input {
-  font-family: "Droid Serif", Times, serif;
+  font-family: "Droid Sans", Times, serif;
 }
 
 time {
@@ -99,7 +99,7 @@ a:hover {
 }
 
 ul {
-  list-style-type: none; 
+  list-style-type: square; 
 }
 
 a:hover {
