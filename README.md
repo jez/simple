@@ -20,11 +20,11 @@ Features
 Installation
 ============
 Its quite simple. Go download Python 2.7+, clone this repository and then run 'pip install -r requirements.txt'.
-Then create a settings file by running create_config.py and then run simple.py. If you want to add a favicon to your blog then drop one (make sure its called 'favicon.ico') in the static folder and restart simple.
+Then create a settings file by running `create_config.py` and then run `simple.py`. If you want to add a favicon to your blog then drop one (make sure its called 'favicon.ico') in the static folder and restart Simple.
 
 ### Updating
-Updates to simple may add, remove or alter settings. Simple ships with a script called create_config.py which can update settings files with changes.
-To do this run "create_config.py" again and you will only be prompted for settings that are not present in the existing settings.py file.
+Updates to Simple may add, remove or alter settings. Simple ships with a script called `create_config.py` which can update settings files with changes.
+To do this run `create_config.py` again and you will only be prompted for settings that are not present in the existing settings.py file.
 
 Deployment
 ============
