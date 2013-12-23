@@ -21,6 +21,8 @@ from werkzeug.contrib.cache import FileSystemCache, NullCache
 from werkzeug.utils import secure_filename
 import json
 from flask import send_from_directory
+import psycopg2
+import urlparse
 
 try:
     import pygments
@@ -37,6 +39,19 @@ ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['USE_FAVICON'] =  os.path.exists(os.path.join(app.static_folder, "favicon.ico"))
 
+urlparse.uses_netloc.append("postgres")
+url = urlparse.urlparse(os.environ["DATABASE_URL"])
+
+urlparse.uses_netloc.append("postgres")
+url = urlparse.urlparse(os.environ["DATABASE_URL"])
+
+conn = psycopg2.connect(
+    database=url.path[1:],
+    user=url.username,
+    password=url.password,
+    host=url.hostname,
+    port=url.port
+)
 
 db = SQLAlchemy(app)
 cache_directory = os.path.dirname(__file__)

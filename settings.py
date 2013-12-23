@@ -2,10 +2,10 @@
 POSTS_PER_PAGE = 10
 POST_CONTENT_ON_HOMEPAGE = False
 ADMIN_USERNAME = 'jake'
-ADMIN_PASSWORD = 'pbkdf2:sha1:1000$vR683aIW$e000a816bd06db87dd06c60365ee61d4b052e96f'
+ADMIN_PASSWORD = 'pbkdf2:sha1:1000$ex7u6ZJI$e19225993b7a04e9ad5052f48f1d10d1658b4ade'
 ANALYTICS_ID = ''
-# SQLALCHEMY_DATABASE_URI = 'sqlite:///simple.db'
-SQLALCHEMY_DATABASE_URI = 'postgres://amuozjyyogntmq:1Kpjo7A7KToquCZ17MlSx7QKFf@ec2-174-129-21-42.compute-1.amazonaws.com:5432/d7699nqrq39hej'
+# SQLALCHEMY_DATABASE_URI = 'postgres://amuozjyyogntmq:1Kpjo7A7KToquCZ17MlSx7QKFf@ec2-174-129-21-42.compute-1.amazonaws.com:5432/d7699nqrq39hej'
+SQLALCHEMY_DATABASE_URI = 'postgres://localhost:5432'
 GITHUB_USERNAME = 'Z1MM32M4N'
 CONTACT_EMAIL = 'zimmerman.jake@gmail.com'
 BLOG_TITLE = 'On Hard Work and No Sleep'
