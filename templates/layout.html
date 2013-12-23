@@ -87,11 +87,17 @@ a2a_config.onclick = 1;
                                 <p><a href="{{ url_for('feed') }}">RSS feed</a></p>
                             </li>
 
+                            <!--
                             {% if is_admin %}
                                 <li>
                                     <p><a href="{{ url_for('admin') }}">Admin</a></p>
                                 </li>
                             {% endif %}
+                            -->
+                            <li>&nbsp;</li>
+                            <li>
+                                <p><a href="{{ url_for('admin') }}">Sign in</a></p>
+                            </li>
 
                             {% block sidebar %}{% endblock %}
                         </ul>

@@ -39,9 +39,33 @@ h1, h2, h3, h4, h5 {
   */
   word-wrap: break-word;
   font-family: "Droid Serif", Times, serif;
-  /*
   line-height: 1.3em;
-  */
+}
+
+h1 { 
+  font-size: 2em; 
+}
+h2 { 
+  font-size: 1.5em; 
+}
+h3 { 
+  font-size: 1.2em; 
+  font-weight: bold;
+}
+h4 { 
+  font-size: 1.1em; 
+  font-weight: bold;
+}
+h5 { 
+  font-size: 1.1em; 
+  font-weight: bold;
+  font-style: italic;
+}
+h6 { /* used for subtitles */
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: bold;
+  color: #333;
 }
 
 pre {
@@ -52,7 +76,7 @@ pre {
 
 .post_container > h1,h2,h3,h4,h5{
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0px;
 }
 .post_container > p {
  font-family: "Droid Sans", Helvetica, sans-serif;
