@@ -9,3 +9,4 @@ Werkzeug==0.9.4
 itsdangerous==0.23
 gunicorn==18.0
 grip==2.0.0
+psychopg2==2.5.1
