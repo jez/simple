@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
 body {
   background: #fff;
@@ -40,13 +40,16 @@ h1, h2, h3, h4, h5 {
   word-wrap: break-word;
   font-family: "Droid Serif", Times, serif;
   line-height: 1.3em;
+  color: #333;
 }
 
 h1 { 
   font-size: 2em; 
+  font-weight: normal;
 }
 h2 { 
   font-size: 1.5em; 
+  font-weight: normal;
 }
 h3 { 
   font-size: 1.2em; 
@@ -64,8 +67,9 @@ h5 {
 h6 { /* used for subtitles */
   font-size: 1.2em;
   font-style: italic;
-  font-weight: bold;
-  color: #333;
+  font-weight: normal;
+  color: #777;
+  font-family: "Droid Sans", Helvetica, sans-serif;
 }
 
 pre {
