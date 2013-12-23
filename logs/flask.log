@@ -64,3 +64,73 @@ Traceback (most recent call last):
   File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 368, in dbapi
     import psycopg2
 ImportError: No module named psycopg2
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/Jake/Google Drive/My Documents/Programming/Web/me/jacobzimmerman/blog-simple/simple.py", line 156, in index
+    posts_master = db.session.query(Post)\
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 149, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/util/_collections.py", line 852, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 139, in __init__
+    bind=db.engine,
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 780, in engine
+    return self.get_engine(self.get_app())
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 797, in get_engine
+    return connector.get_engine()
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 473, in get_engine
+    self._engine = rv = sqlalchemy.create_engine(info, **options)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/engine/__init__.py", line 332, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/engine/strategies.py", line 50, in create
+    dialect_cls = u.get_dialect()
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/engine/url.py", line 107, in get_dialect
+    cls = registry.load(name)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 142, in load
+    (self.group, name))
+ArgumentError: Can't load plugin: sqlalchemy.dialects:postgre
+Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/Jake/Google Drive/My Documents/Programming/Web/me/jacobzimmerman/blog-simple/simple.py", line 202, in view_post_slug
+    post = db.session.query(Post).filter_by(slug=slug, draft=False).one()
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 149, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/util/_collections.py", line 852, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 139, in __init__
+    bind=db.engine,
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 780, in engine
+    return self.get_engine(self.get_app())
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 797, in get_engine
+    return connector.get_engine()
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 473, in get_engine
+    self._engine = rv = sqlalchemy.create_engine(info, **options)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/engine/__init__.py", line 332, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/engine/strategies.py", line 50, in create
+    dialect_cls = u.get_dialect()
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/engine/url.py", line 107, in get_dialect
+    cls = registry.load(name)
+  File "/Users/Jake/.virtualenvs/blog-me/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 142, in load
+    (self.group, name))
+ArgumentError: Can't load plugin: sqlalchemy.dialects:postgre

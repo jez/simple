@@ -24,10 +24,11 @@
 {% block content %}
     <section id="post-{{ post.id }}">
         <div class="post_container">
-            <div class="post_header">
-                <h1>{{ post.title }}</h1>
-            </div>
-            <br/>
+          <!--
+          <div class="post_header">
+            <h1>{{ post.title }}</h1>
+          </div>
+          -->
             {{ post.render_content()|safe }}
         </div>
 

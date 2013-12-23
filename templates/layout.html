@@ -51,7 +51,7 @@
                         <h1><a href="{{ url_for('index') }}">{{ config.BLOG_TITLE }}</a></h1>
                         <br />
                         <span>{{ config.BLOG_TAGLINE }}</span>
-                        <ul>
+                        <ul class="unstyled">
                             {% if config.GITHUB_USERNAME %}
                                 <li><p><a href="https://github.com/{{ config.GITHUB_USERNAME }}/">Github</a></p></li>
                             {% endif %}

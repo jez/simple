@@ -39,9 +39,12 @@ ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['USE_FAVICON'] =  os.path.exists(os.path.join(app.static_folder, "favicon.ico"))
 
-urlparse.uses_netloc.append("postgres")
-url = urlparse.urlparse(os.environ["DATABASE_URL"])
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["DATABASE_URL"]
+if "DATABASE_URL" in os.environ:
+    # We are running on heroku
+    app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["DATABASE_URL"]
+else:
+    # We are running locally
+    app.config["SQLALCHEMY_DATABASE_URI"] = "postgre://localhost:5432"
 
 # conn = psycopg2.connect(
 #     database=url.path[1:],
